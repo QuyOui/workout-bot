@@ -383,6 +383,14 @@
       "weight": "70",
       "sets_reps": "10,6,6",
       "notes": "Increased from 65"
+    },
+    {
+      "date": "2/11/26",
+      "day": "Upper B",
+      "exercise": "Chin-ups",
+      "weight": "BW",
+      "sets_reps": "4,4,3,2",
+      "notes": ""
     }
   ]
 }
