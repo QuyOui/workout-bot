@@ -13,10 +13,10 @@ from pathlib import Path
 WORKOUT_ROTATION = ["Upper A", "Lower A", "Upper B", "Lower B"]
 
 WORKOUT_EXERCISES = {
-    "Upper A": ["Bench Press", "Barbell Rows", "Overhead Press", "Tricep Extension", "Dumbbell Curls"],
-    "Upper B": ["Bench Press", "Overhead Press", "Chin-ups", "Overhead Tricep Ext", "Hammer Curls"],
+    "Upper A": ["Bench Press", "Barbell Rows", "Overhead Press", "Tricep Pushdowns", "Dumbbell Curls", "Face Pulls"],
+    "Upper B": ["Bench Press", "Lat Pulldowns", "Cable Lateral Raises", "Overhead Tricep Ext", "Hammer Curls", "Face Pulls"],
     "Lower A": ["Back Squats", "Conventional Deadlifts", "Leg Extensions", "Leg Curls", "Calf Raises"],
-    "Lower B": ["Romanian Deadlifts", "Goblet Squats", "Leg Curls", "Leg Extensions", "Standing Calf Raises"],
+    "Lower B": ["Romanian Deadlifts", "Cable Pull-Throughs", "Leg Curls", "Leg Extensions", "Standing Calf Raises"],
 }
 
 
