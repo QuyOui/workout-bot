@@ -10,13 +10,14 @@ import os
 from datetime import datetime
 from pathlib import Path
 
-WORKOUT_ROTATION = ["Upper A", "Lower A", "Upper B", "Lower B"]
+WORKOUT_ROTATION = ["Pull A", "Push A", "Legs", "Pull B", "Push B", "Legs"]
 
 WORKOUT_EXERCISES = {
-    "Upper A": ["Bench Press", "Standing Cable Rows", "Cable Presses", "Tricep Pushdowns", "Dumbbell Curls", "Face Pulls"],
-    "Upper B": ["Bench Press", "Lat Pulldowns", "Cable Lateral Raises", "Overhead Tricep Ext", "Hammer Curls", "Face Pulls"],
-    "Lower A": ["Back Squats", "Conventional Deadlifts", "Leg Extensions", "Leg Curls", "Calf Raises"],
-    "Lower B": ["Romanian Deadlifts", "Cable Pull-Throughs", "Leg Curls", "Leg Extensions", "Standing Calf Raises"],
+    "Pull A": ["Deadlifts", "Lat Pulldowns", "Cable Rows", "Face Pulls", "Hammer Curls", "Dumbbell Curls"],
+    "Pull B": ["Barbell Rows", "Lat Pulldowns", "Cable Rows", "Face Pulls", "Hammer Curls", "Dumbbell Curls"],
+    "Push A": ["Bench Press", "Overhead Press", "Incline Dumbbell Press", "Tricep Pushdowns", "Overhead Tricep Ext", "Cable Lateral Raises"],
+    "Push B": ["Overhead Press", "Bench Press", "Incline Dumbbell Press", "Tricep Pushdowns", "Overhead Tricep Ext", "Cable Lateral Raises"],
+    "Legs": ["Back Squats", "Romanian Deadlifts", "Leg Extensions", "Leg Curls", "Calf Raises"],
 }
 
 
@@ -91,14 +92,21 @@ class WorkoutLogger:
         if not workouts:
             return WORKOUT_ROTATION[0], {}
 
-        # Find the last workout day
+        # Find the last workout day and determine next in rotation
         last_day = workouts[-1]["day"]
 
-        # Advance to next in rotation
-        try:
-            idx = WORKOUT_ROTATION.index(last_day)
-            next_day = WORKOUT_ROTATION[(idx + 1) % len(WORKOUT_ROTATION)]
-        except ValueError:
+        # Count workouts in the current program by finding sessions with
+        # day types that match the current rotation
+        valid_days = set(WORKOUT_EXERCISES.keys())
+        session_dates = []
+        for w in workouts:
+            if w["day"] in valid_days and w["date"] not in session_dates:
+                session_dates.append(w["date"])
+
+        if session_dates:
+            next_idx = len(session_dates) % len(WORKOUT_ROTATION)
+            next_day = WORKOUT_ROTATION[next_idx]
+        else:
             next_day = WORKOUT_ROTATION[0]
 
         # Gather last-used weights and sets/reps for each exercise in the upcoming workout
