@@ -15,8 +15,8 @@ WORKOUT_ROTATION = ["Pull A", "Push A", "Legs", "Pull B", "Push B", "Legs"]
 WORKOUT_EXERCISES = {
     "Pull A": ["Deadlifts", "Lat Pulldowns", "Cable Rows", "Face Pulls", "Hammer Curls", "Dumbbell Curls"],
     "Pull B": ["Barbell Rows", "Lat Pulldowns", "Cable Rows", "Face Pulls", "Hammer Curls", "Dumbbell Curls"],
-    "Push A": ["Bench Press", "Overhead Press", "Incline Dumbbell Press", "Tricep Pushdowns", "Overhead Tricep Ext", "Cable Lateral Raises"],
-    "Push B": ["Overhead Press", "Bench Press", "Incline Dumbbell Press", "Tricep Pushdowns", "Overhead Tricep Ext", "Cable Lateral Raises"],
+    "Push A": ["Bench Press", "Overhead Press", "Cable Flyes", "Tricep Pushdowns", "Cable Overhead Tricep Ext", "Cable Lateral Raises"],
+    "Push B": ["Overhead Press", "Bench Press", "Cable Flyes", "Tricep Pushdowns", "Cable Overhead Tricep Ext", "Cable Lateral Raises"],
     "Legs": ["Back Squats", "Romanian Deadlifts", "Leg Extensions", "Leg Curls", "Calf Raises"],
 }
 
