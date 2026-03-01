@@ -542,7 +542,15 @@
       "exercise": "Cable Curls",
       "weight": "25",
       "sets_reps": "3x8",
-      "notes": "Subbed for Hammer Curls today"
+      "notes": ""
+    },
+    {
+      "date": "3/1/26",
+      "day": "Pull A",
+      "exercise": "Cable Hammer Curls",
+      "weight": "30",
+      "sets_reps": "3x8",
+      "notes": ""
     }
   ]
 }
