@@ -20,6 +20,48 @@ WORKOUT_EXERCISES = {
     "Legs": ["Back Squats", "Romanian Deadlifts", "Leg Extensions", "Leg Curls", "Calf Raises"],
 }
 
+EXERCISE_TARGETS = {
+    "Pull A": {
+        "Deadlifts": "1x5",
+        "Lat Pulldowns": "3x8-12",
+        "Cable Rows": "3x8-12",
+        "Face Pulls": "5x15-20",
+        "Cable Hammer Curls": "4x8-12",
+        "Cable Curls": "4x8-12",
+    },
+    "Pull B": {
+        "Barbell Rows": "5x5",
+        "Lat Pulldowns": "3x8-12",
+        "Cable Rows": "3x8-12",
+        "Face Pulls": "5x15-20",
+        "Cable Hammer Curls": "4x8-12",
+        "Cable Curls": "4x8-12",
+    },
+    "Push A": {
+        "Bench Press": "5x5",
+        "Overhead Press": "3x8-12",
+        "Cable Flyes": "3x8-12",
+        "Tricep Pushdowns": "3x8-12",
+        "Cable Overhead Tricep Ext": "3x8-12",
+        "Cable Lateral Raises": "3x15-20",
+    },
+    "Push B": {
+        "Overhead Press": "5x5",
+        "Bench Press": "3x8-12",
+        "Cable Flyes": "3x8-12",
+        "Tricep Pushdowns": "3x8-12",
+        "Cable Overhead Tricep Ext": "3x8-12",
+        "Cable Lateral Raises": "3x15-20",
+    },
+    "Legs": {
+        "Back Squats": "3x5",
+        "Romanian Deadlifts": "3x8-12",
+        "Leg Extensions": "3x8-12",
+        "Leg Curls": "3x8-12",
+        "Calf Raises": "5x8-12",
+    },
+}
+
 
 class WorkoutLogger:
     def __init__(self):
@@ -131,14 +173,16 @@ class WorkoutLogger:
         print(f"{'='*50}\n")
 
         exercises = WORKOUT_EXERCISES[day]
-        print(f"  {'Exercise':<28} {'Weight':<10} {'Last Sets/Reps'}")
-        print(f"  {'-'*58}")
+        targets = EXERCISE_TARGETS.get(day, {})
+        print(f"  {'Exercise':<28} {'Target':<12} {'Weight':<10} {'Last Sets/Reps'}")
+        print(f"  {'-'*70}")
         for ex in exercises:
             stats = last_stats.get(ex, {})
+            target = targets.get(ex, "—")
             weight = stats.get("weight", "—")
             sets_reps = stats.get("sets_reps", "—")
             notes = stats.get("notes", "")
-            line = f"  {ex:<28} {weight:<10} {sets_reps}"
+            line = f"  {ex:<28} {target:<12} {weight:<10} {sets_reps}"
             if notes:
                 line += f"  ({notes})"
             print(line)
