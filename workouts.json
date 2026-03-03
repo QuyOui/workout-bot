@@ -575,6 +575,14 @@
       "weight": "15",
       "sets_reps": "3x12",
       "notes": "First time — baseline weight"
+    },
+    {
+      "date": "3/3/26",
+      "day": "Push A",
+      "exercise": "Tricep Pushdowns",
+      "weight": "30",
+      "sets_reps": "12,10,8",
+      "notes": ""
     }
   ]
 }
