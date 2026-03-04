@@ -54,7 +54,7 @@ EXERCISE_TARGETS = {
         "Cable Lateral Raises": "3x15-20",
     },
     "Legs": {
-        "Back Squats": "3x5",
+        "Back Squats": "2x5, 1x5+",
         "Romanian Deadlifts": "3x8-12",
         "Leg Extensions": "3x8-12",
         "Leg Curls": "3x8-12",
