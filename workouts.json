@@ -524,7 +524,7 @@
       "date": "3/1/26",
       "day": "Pull A",
       "exercise": "Lat Pulldowns",
-      "weight": "40",
+      "weight": "35",
       "sets_reps": "3x12",
       "notes": ""
     },
@@ -622,6 +622,14 @@
       "exercise": "Barbell Rows",
       "weight": "75",
       "sets_reps": "5x5",
+      "notes": ""
+    },
+    {
+      "date": "3/5/26",
+      "day": "Pull B",
+      "exercise": "Lat Pulldowns",
+      "weight": "35",
+      "sets_reps": "3x12",
       "notes": ""
     }
   ]
