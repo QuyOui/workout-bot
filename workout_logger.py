@@ -151,15 +151,37 @@ class WorkoutLogger:
         else:
             next_day = WORKOUT_ROTATION[0]
 
-        # Gather last-used weights and sets/reps for each exercise in the upcoming workout
+        # Gather last-used weights and sets/reps for each exercise in the upcoming workout.
+        # For exercises whose target differs between days (e.g. Bench Press is 5x5 on
+        # Push A but 3x8-12 on Push B), only use stats from the same day type so
+        # strength and hypertrophy weights stay separate.
+        next_exercises = set(WORKOUT_EXERCISES.get(next_day, []))
+        next_targets = EXERCISE_TARGETS.get(next_day, {})
+
+        # Identify exercises that have a different target on another day
+        diff_target_exercises = set()
+        for day_name, day_exercises in WORKOUT_EXERCISES.items():
+            if day_name == next_day:
+                continue
+            for ex in day_exercises:
+                if ex in next_exercises:
+                    other_target = EXERCISE_TARGETS.get(day_name, {}).get(ex)
+                    this_target = next_targets.get(ex)
+                    if other_target != this_target:
+                        diff_target_exercises.add(ex)
+
         last_stats = {}
         for w in workouts:
-            if w["exercise"] in WORKOUT_EXERCISES.get(next_day, []):
-                last_stats[w["exercise"]] = {
-                    "weight": w["weight"],
-                    "sets_reps": w["sets_reps"],
-                    "notes": w.get("notes", ""),
-                }
+            if w["exercise"] not in next_exercises:
+                continue
+            # For exercises with differing targets across days, only match same day
+            if w["exercise"] in diff_target_exercises and w["day"] != next_day:
+                continue
+            last_stats[w["exercise"]] = {
+                "weight": w["weight"],
+                "sets_reps": w["sets_reps"],
+                "notes": w.get("notes", ""),
+            }
 
         return next_day, last_stats
 
