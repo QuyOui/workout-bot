@@ -170,9 +170,16 @@ class WorkoutLogger:
                     if other_target != this_target:
                         diff_target_exercises.add(ex)
 
+        # Days in the current rotation — ignore stats from old/retired day types
+        current_days = set(WORKOUT_ROTATION)
+
         last_stats = {}
         for w in workouts:
             if w["exercise"] not in next_exercises:
+                continue
+            # Skip entries from day types not in the current rotation (e.g. old
+            # "Upper A" Barbell Rows shouldn't carry over to Pull B 5x5)
+            if w["day"] not in current_days:
                 continue
             # For exercises with differing targets across days, only match same day
             if w["exercise"] in diff_target_exercises and w["day"] != next_day:
