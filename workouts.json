@@ -523,6 +523,14 @@
     {
       "date": "3/1/26",
       "day": "Pull A",
+      "exercise": "Lat Pulldowns",
+      "weight": "40",
+      "sets_reps": "3x12",
+      "notes": ""
+    },
+    {
+      "date": "3/1/26",
+      "day": "Pull A",
       "exercise": "Cable Rows",
       "weight": "25",
       "sets_reps": "4x12",
