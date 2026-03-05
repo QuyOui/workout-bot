@@ -558,7 +558,7 @@
       "exercise": "Bench Press",
       "weight": "135",
       "sets_reps": "4x8",
-      "notes": "All sets clean — increase to 140 next time"
+      "notes": "All sets clean \u2014 increase to 140 next time"
     },
     {
       "date": "3/2/26",
@@ -574,7 +574,7 @@
       "exercise": "Cable Flyes",
       "weight": "15",
       "sets_reps": "3x12",
-      "notes": "First time — baseline weight"
+      "notes": "First time \u2014 baseline weight"
     },
     {
       "date": "3/2/26",
@@ -590,7 +590,7 @@
       "exercise": "Cable Overhead Tricep Ext",
       "weight": "15",
       "sets_reps": "3x12",
-      "notes": "First time — baseline weight"
+      "notes": "First time \u2014 baseline weight"
     },
     {
       "date": "3/2/26",
@@ -598,7 +598,7 @@
       "exercise": "Cable Lateral Raises",
       "weight": "15",
       "sets_reps": "3x12",
-      "notes": "First time — baseline weight. Target is 3x15"
+      "notes": "First time \u2014 baseline weight. Target is 3x15"
     },
     {
       "date": "3/3/26",
@@ -606,6 +606,14 @@
       "exercise": "Back Squats",
       "weight": "130",
       "sets_reps": "3x5",
+      "notes": ""
+    },
+    {
+      "date": "3/5/26",
+      "day": "Pull B",
+      "exercise": "Barbell Rows",
+      "weight": "75",
+      "sets_reps": "5x5",
       "notes": ""
     }
   ]
