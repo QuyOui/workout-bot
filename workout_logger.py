@@ -174,9 +174,17 @@ class WorkoutLogger:
         current_days = set(WORKOUT_ROTATION)
 
         last_stats = {}
+        # Also track the most recent weight from ANY day as a fallback reference
+        fallback_stats = {}
         for w in workouts:
             if w["exercise"] not in next_exercises:
                 continue
+            # Always record as fallback regardless of day type
+            fallback_stats[w["exercise"]] = {
+                "weight": w["weight"],
+                "sets_reps": w["sets_reps"],
+                "notes": w.get("notes", ""),
+            }
             # Skip entries from day types not in the current rotation (e.g. old
             # "Upper A" Barbell Rows shouldn't carry over to Pull B 5x5)
             if w["day"] not in current_days:
@@ -189,6 +197,17 @@ class WorkoutLogger:
                 "sets_reps": w["sets_reps"],
                 "notes": w.get("notes", ""),
             }
+
+        # Fill in fallback stats for exercises with no current-rotation history
+        for ex in next_exercises:
+            if ex not in last_stats and ex in fallback_stats:
+                fb = fallback_stats[ex]
+                last_stats[ex] = {
+                    "weight": fb["weight"],
+                    "sets_reps": fb["sets_reps"],
+                    "notes": fb.get("notes", ""),
+                    "is_reference": True,
+                }
 
         return next_day, last_stats
 
@@ -211,8 +230,13 @@ class WorkoutLogger:
             weight = stats.get("weight", "—")
             sets_reps = stats.get("sets_reps", "—")
             notes = stats.get("notes", "")
+            is_ref = stats.get("is_reference", False)
+            if is_ref:
+                weight = f"~{weight}"
             line = f"  {ex:<28} {target:<12} {weight:<10} {sets_reps}"
-            if notes:
+            if is_ref:
+                line += "  (ref from old program)"
+            elif notes:
                 line += f"  ({notes})"
             print(line)
 
