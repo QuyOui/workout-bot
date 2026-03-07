@@ -663,6 +663,54 @@
       "weight": "20",
       "sets_reps": "8,7,5,5",
       "notes": "Reps dropped — stay at 20 next time"
+    },
+    {
+      "date": "3/6/26",
+      "day": "Push B",
+      "exercise": "Overhead Press",
+      "weight": "70",
+      "sets_reps": "5x5",
+      "notes": "Clean — increase to 75 next time"
+    },
+    {
+      "date": "3/6/26",
+      "day": "Push B",
+      "exercise": "Bench Press",
+      "weight": "135",
+      "sets_reps": "9,8,5",
+      "notes": "Reps dropped — try 130 next time for 3x8-12"
+    },
+    {
+      "date": "3/6/26",
+      "day": "Push B",
+      "exercise": "Cable Flyes",
+      "weight": "20",
+      "sets_reps": "6,8,8",
+      "notes": "Increased from 15 — stay at 20"
+    },
+    {
+      "date": "3/6/26",
+      "day": "Push B",
+      "exercise": "Tricep Pushdowns",
+      "weight": "30",
+      "sets_reps": "12,12,9",
+      "notes": "Close to maxing — try 35 next time"
+    },
+    {
+      "date": "3/6/26",
+      "day": "Push B",
+      "exercise": "Cable Overhead Tricep Ext",
+      "weight": "20",
+      "sets_reps": "3x12",
+      "notes": "Maxed range — increase to 25 next time"
+    },
+    {
+      "date": "3/6/26",
+      "day": "Push B",
+      "exercise": "Cable Lateral Raises",
+      "weight": "20",
+      "sets_reps": "8,5,5",
+      "notes": "Too heavy for 15-20 target — drop to 15 next time"
     }
   ]
 }
