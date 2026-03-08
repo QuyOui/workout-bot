@@ -249,6 +249,7 @@
       "notes": ""
     },
     {
+<<<<<<< HEAD
       "date": "2/5/26",
       "day": "Lower B",
       "exercise": "Romanian Deadlifts",
@@ -711,6 +712,22 @@
       "weight": "20",
       "sets_reps": "8,5,5",
       "notes": "Too heavy for 15-20 target — drop to 15 next time"
+    },
+    {
+      "date": "3/8/26",
+      "day": "Legs",
+      "exercise": "Leg Curls",
+      "weight": "70",
+      "sets_reps": "12,8,5",
+      "notes": "Stay at 70 next session"
+    },
+    {
+      "date": "3/8/26",
+      "day": "Legs",
+      "exercise": "Calf Raises",
+      "weight": "150",
+      "sets_reps": "12,12,12,12,12",
+      "notes": "Move up to 170 next session"
     }
   ]
 }
