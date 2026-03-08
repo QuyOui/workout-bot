@@ -727,6 +727,54 @@
       "weight": "150",
       "sets_reps": "12,12,12,12,12",
       "notes": "Move up to 170 next session"
+    },
+    {
+      "date": "3/8/26",
+      "day": "Pull A",
+      "exercise": "Deadlifts",
+      "weight": "135",
+      "sets_reps": "1x5",
+      "notes": "Move up to 145 next time"
+    },
+    {
+      "date": "3/8/26",
+      "day": "Pull A",
+      "exercise": "Lat Pulldowns",
+      "weight": "42.5",
+      "sets_reps": "12,10,8",
+      "notes": "Stay at 42.5 next session"
+    },
+    {
+      "date": "3/8/26",
+      "day": "Pull A",
+      "exercise": "Cable Rows",
+      "weight": "30",
+      "sets_reps": "12,10,7",
+      "notes": "Stay at 30 next session"
+    },
+    {
+      "date": "3/8/26",
+      "day": "Pull A",
+      "exercise": "Face Pulls",
+      "weight": "15",
+      "sets_reps": "5x15",
+      "notes": "Move up to 17.5 next time"
+    },
+    {
+      "date": "3/8/26",
+      "day": "Pull A",
+      "exercise": "Cable Hammer Curls",
+      "weight": "37.5",
+      "sets_reps": "15,12,10,8",
+      "notes": "Big jump from 30 — stay at 37.5 next session"
+    },
+    {
+      "date": "3/8/26",
+      "day": "Pull A",
+      "exercise": "Cable Curls",
+      "weight": "20",
+      "sets_reps": "9,6,4,7",
+      "notes": "Improving from 8,7,5,5 — stay at 20"
     }
   ]
 }
