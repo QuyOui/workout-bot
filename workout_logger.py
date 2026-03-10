@@ -63,6 +63,19 @@ EXERCISE_TARGETS = {
 }
 
 
+# Weight increment per exercise (lbs)
+WEIGHT_INCREMENT = {
+    "Deadlifts": 5,
+    "Back Squats": 5,
+    "Bench Press": 5,
+    "Overhead Press": 5,
+    "Barbell Rows": 5,
+    "Romanian Deadlifts": 5,
+    # Cable/machine defaults to 5
+}
+DEFAULT_INCREMENT = 5
+
+
 def get_progression_suggestion(target, last_sets_reps):
     """Determine if the lifter should increase weight based on last performance vs target.
 
@@ -291,7 +304,7 @@ class WorkoutLogger:
 
         exercises = WORKOUT_EXERCISES[day]
         targets = EXERCISE_TARGETS.get(day, {})
-        print(f"  {'Exercise':<28} {'Target':<12} {'Weight':<10} {'Last Sets/Reps':<16} {'Suggestion'}")
+        print(f"  {'Exercise':<28} {'Target':<12} {'Use Today':<12} {'Last':<16} {'Note'}")
         print(f"  {'-'*80}")
         for ex in exercises:
             stats = last_stats.get(ex, {})
@@ -301,13 +314,30 @@ class WorkoutLogger:
             notes = stats.get("notes", "")
             is_ref = stats.get("is_reference", False)
             suggestion = get_progression_suggestion(target, sets_reps) if not is_ref else ""
-            if is_ref:
-                weight = f"~{weight}"
-            line = f"  {ex:<28} {target:<12} {weight:<10} {sets_reps:<16} {suggestion}"
-            if is_ref:
-                line += "  (ref from old program)"
-            elif notes:
-                line += f"  ({notes})"
+
+            # Compute today's recommended weight
+            if weight == "—" or weight == "BW":
+                use_today = weight
+                note = ""
+            elif suggestion == "↑ Increase":
+                increment = WEIGHT_INCREMENT.get(ex, DEFAULT_INCREMENT)
+                try:
+                    use_today = str(int(weight) + increment)
+                except ValueError:
+                    use_today = weight
+                note = f"↑ from {weight}"
+            else:
+                use_today = f"~{weight}" if is_ref else weight
+                if is_ref:
+                    note = "ref from old program"
+                elif suggestion == "Repeat":
+                    note = "repeat weight"
+                else:
+                    note = ""
+            if notes and not is_ref:
+                note = notes if not note else f"{note} — {notes}"
+
+            line = f"  {ex:<28} {target:<12} {use_today:<12} {sets_reps:<16} {note}"
             print(line)
 
         print()
