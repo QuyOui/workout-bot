@@ -775,6 +775,22 @@
       "weight": "20",
       "sets_reps": "9,6,4,7",
       "notes": "Improving from 8,7,5,5 — stay at 20"
+    },
+    {
+      "date": "3/10/26",
+      "day": "Push A",
+      "exercise": "Overhead Press",
+      "weight": "70",
+      "sets_reps": "10,8,8",
+      "notes": "Improved from 10,7,6 — hitting target range"
+    },
+    {
+      "date": "3/10/26",
+      "day": "Push A",
+      "exercise": "Cable Flyes",
+      "weight": "20",
+      "sets_reps": "3x12",
+      "notes": "Form needs work — stay at 20"
     }
   ]
 }
