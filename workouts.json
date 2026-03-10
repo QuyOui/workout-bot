@@ -654,7 +654,7 @@
       "exercise": "Cable Hammer Curls",
       "weight": "30",
       "sets_reps": "4x12",
-      "notes": "Hit top of range — increase to 35 next time"
+      "notes": "Hit top of range \u2014 increase to 35 next time"
     },
     {
       "date": "3/5/26",
@@ -662,7 +662,7 @@
       "exercise": "Cable Curls",
       "weight": "20",
       "sets_reps": "8,7,5,5",
-      "notes": "Reps dropped — stay at 20 next time"
+      "notes": "Reps dropped \u2014 stay at 20 next time"
     },
     {
       "date": "3/6/26",
@@ -670,7 +670,7 @@
       "exercise": "Overhead Press",
       "weight": "70",
       "sets_reps": "5x5",
-      "notes": "Clean — increase to 75 next time"
+      "notes": "Clean \u2014 increase to 75 next time"
     },
     {
       "date": "3/6/26",
@@ -678,7 +678,7 @@
       "exercise": "Bench Press",
       "weight": "135",
       "sets_reps": "9,8,5",
-      "notes": "Reps dropped — try 130 next time for 3x8-12"
+      "notes": "Reps dropped \u2014 try 130 next time for 3x8-12"
     },
     {
       "date": "3/6/26",
@@ -686,7 +686,7 @@
       "exercise": "Cable Flyes",
       "weight": "20",
       "sets_reps": "6,8,8",
-      "notes": "Increased from 15 — stay at 20"
+      "notes": "Increased from 15 \u2014 stay at 20"
     },
     {
       "date": "3/6/26",
@@ -694,7 +694,7 @@
       "exercise": "Tricep Pushdowns",
       "weight": "30",
       "sets_reps": "12,12,9",
-      "notes": "Close to maxing — try 35 next time"
+      "notes": "Close to maxing \u2014 try 35 next time"
     },
     {
       "date": "3/6/26",
@@ -702,7 +702,7 @@
       "exercise": "Cable Overhead Tricep Ext",
       "weight": "20",
       "sets_reps": "3x12",
-      "notes": "Maxed range — increase to 25 next time"
+      "notes": "Maxed range \u2014 increase to 25 next time"
     },
     {
       "date": "3/6/26",
@@ -710,7 +710,7 @@
       "exercise": "Cable Lateral Raises",
       "weight": "20",
       "sets_reps": "8,5,5",
-      "notes": "Too heavy for 15-20 target — drop to 15 next time"
+      "notes": "Too heavy for 15-20 target \u2014 drop to 15 next time"
     },
     {
       "date": "3/7/26",
@@ -766,7 +766,7 @@
       "exercise": "Cable Hammer Curls",
       "weight": "37.5",
       "sets_reps": "15,12,10,8",
-      "notes": "Big jump from 30 — stay at 37.5 next session"
+      "notes": "Big jump from 30 \u2014 stay at 37.5 next session"
     },
     {
       "date": "3/8/26",
@@ -774,7 +774,7 @@
       "exercise": "Cable Curls",
       "weight": "20",
       "sets_reps": "9,6,4,7",
-      "notes": "Improving from 8,7,5,5 — stay at 20"
+      "notes": "Improving from 8,7,5,5 \u2014 stay at 20"
     },
     {
       "date": "3/9/26",
@@ -782,7 +782,7 @@
       "exercise": "Overhead Press",
       "weight": "70",
       "sets_reps": "10,8,8",
-      "notes": "Improved from 10,7,6 — hitting target range"
+      "notes": "Improved from 10,7,6 \u2014 hitting target range"
     },
     {
       "date": "3/9/26",
@@ -790,7 +790,7 @@
       "exercise": "Cable Flyes",
       "weight": "20",
       "sets_reps": "3x12",
-      "notes": "Form needs work — stay at 20"
+      "notes": "Form needs work \u2014 stay at 20"
     },
     {
       "date": "3/9/26",
@@ -798,7 +798,7 @@
       "exercise": "Tricep Pushdowns",
       "weight": "35",
       "sets_reps": "12,12,6",
-      "notes": "Increased from 30 — stay at 35"
+      "notes": "Increased from 30 \u2014 stay at 35"
     },
     {
       "date": "3/9/26",
@@ -806,7 +806,7 @@
       "exercise": "Bench Press",
       "weight": "140",
       "sets_reps": "5,5,5,5,7",
-      "notes": "Increased from 135 — hit 5x5+ clean, increase to 145 next time"
+      "notes": "Increased from 135 \u2014 hit 5x5+ clean, increase to 145 next time"
     },
     {
       "date": "3/9/26",
@@ -822,7 +822,15 @@
       "exercise": "Cable Lateral Raises",
       "weight": "10",
       "sets_reps": "15,10,8",
-      "notes": "Dropped off after set 1 — stay at 10 until hitting 3x15"
+      "notes": "Dropped off after set 1 \u2014 stay at 10 until hitting 3x15"
+    },
+    {
+      "date": "3/10/26",
+      "day": "Legs",
+      "exercise": "Back Squats",
+      "weight": "135",
+      "sets_reps": "5,5,8",
+      "notes": ""
     }
   ]
 }
