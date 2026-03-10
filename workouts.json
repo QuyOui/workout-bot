@@ -807,6 +807,22 @@
       "weight": "140",
       "sets_reps": "5,5,5,5,7",
       "notes": "Increased from 135 — hit 5x5+ clean, increase to 145 next time"
+    },
+    {
+      "date": "3/10/26",
+      "day": "Push A",
+      "exercise": "Cable Overhead Tricep Ext",
+      "weight": "25",
+      "sets_reps": "12,8,12",
+      "notes": "Hit target on sets 1 & 3, stay at 25"
+    },
+    {
+      "date": "3/10/26",
+      "day": "Push A",
+      "exercise": "Cable Lateral Raises",
+      "weight": "10",
+      "sets_reps": "15,10,8",
+      "notes": "Dropped off after set 1 — stay at 10 until hitting 3x15"
     }
   ]
 }
