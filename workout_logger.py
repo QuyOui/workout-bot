@@ -219,27 +219,56 @@ class WorkoutLogger:
         # Find the last workout day and determine next in rotation
         last_day = workouts[-1]["day"]
 
-        # Count workouts in the current program by finding sessions with
-        # day types that match the current rotation
+        # Count completed sessions in the current program by finding sessions
+        # where all exercises for that day type were logged
         valid_days = set(WORKOUT_EXERCISES.keys())
-        session_dates = []
+        # Group workouts by (date, day) to find sessions
+        sessions = {}  # (date, day) -> set of exercises logged
         for w in workouts:
-            if w["day"] in valid_days and w["date"] not in session_dates:
-                session_dates.append(w["date"])
+            if w["day"] in valid_days:
+                key = (w["date"], w["day"])
+                if key not in sessions:
+                    sessions[key] = set()
+                sessions[key].add(w["exercise"])
 
-        if session_dates:
-            next_idx = len(session_dates) % len(WORKOUT_ROTATION)
+        # Check if the most recent session is still in progress
+        last_date = workouts[-1]["date"]
+        if last_day in valid_days:
+            last_key = (last_date, last_day)
+            expected_exercises = set(WORKOUT_EXERCISES[last_day])
+            logged_exercises = sessions.get(last_key, set())
+            if logged_exercises < expected_exercises:
+                # Session incomplete — stay on this day
+                next_day = last_day
+                # Skip rotation counting, go straight to gathering stats
+                next_exercises = set(WORKOUT_EXERCISES.get(next_day, []))
+                next_targets = EXERCISE_TARGETS.get(next_day, {})
+                return self._gather_last_stats(workouts, next_day, next_exercises, next_targets)
+
+        # All exercises logged for last session — count completed sessions
+        completed_sessions = []
+        for (date, day), exercises in sessions.items():
+            if day in valid_days and exercises >= set(WORKOUT_EXERCISES[day]):
+                if date not in completed_sessions:
+                    completed_sessions.append(date)
+
+        if completed_sessions:
+            next_idx = len(completed_sessions) % len(WORKOUT_ROTATION)
             next_day = WORKOUT_ROTATION[next_idx]
         else:
             next_day = WORKOUT_ROTATION[0]
 
-        # Gather last-used weights and sets/reps for each exercise in the upcoming workout.
-        # For exercises whose target differs between days (e.g. Bench Press is 5x5 on
-        # Push A but 3x8-12 on Push B), only use stats from the same day type so
-        # strength and hypertrophy weights stay separate.
         next_exercises = set(WORKOUT_EXERCISES.get(next_day, []))
         next_targets = EXERCISE_TARGETS.get(next_day, {})
+        return self._gather_last_stats(workouts, next_day, next_exercises, next_targets)
 
+    def _gather_last_stats(self, workouts, next_day, next_exercises, next_targets):
+        """Gather last-used weights and sets/reps for each exercise in the upcoming workout.
+
+        For exercises whose target differs between days (e.g. Bench Press is 5x5 on
+        Push A but 3x8-12 on Push B), only use stats from the same day type so
+        strength and hypertrophy weights stay separate.
+        """
         # Identify exercises that have a different target on another day
         diff_target_exercises = set()
         for day_name, day_exercises in WORKOUT_EXERCISES.items():
