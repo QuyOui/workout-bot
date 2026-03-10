@@ -322,10 +322,35 @@ class WorkoutLogger:
 
         return next_day, last_stats
 
+    def get_todays_logged(self):
+        """Return set of exercises already logged for today's session."""
+        data = self.load_workouts()
+        workouts = data["workouts"]
+        today = datetime.now().strftime("%-m/%-d/%y")
+
+        day, _ = self.get_todays_workout()
+        logged = set()
+        for w in workouts:
+            if w["date"] == today and w["day"] == day:
+                logged.add(w["exercise"])
+        return day, logged
+
+    def get_next_exercise(self):
+        """Return the next unlogged exercise for today's session, or None if complete."""
+        day, logged = self.get_todays_logged()
+        exercises = WORKOUT_EXERCISES[day]
+        for ex in exercises:
+            if ex not in logged:
+                return ex
+        return None
+
     def show_todays_workout(self):
         """Display today's workout with last-used weights"""
         day, last_stats = self.get_todays_workout()
         today = datetime.now().strftime("%-m/%-d/%y")
+
+        # Find exercises already logged today
+        _, logged_today = self.get_todays_logged()
 
         print(f"\n{'='*50}")
         print(f"  Today's Workout: {day}  ({today})")
@@ -335,6 +360,7 @@ class WorkoutLogger:
         targets = EXERCISE_TARGETS.get(day, {})
         print(f"  {'Exercise':<28} {'Target':<12} {'Use Today':<12} {'Last':<16} {'Note'}")
         print(f"  {'-'*80}")
+        next_up = None
         for ex in exercises:
             stats = last_stats.get(ex, {})
             target = targets.get(ex, "—")
@@ -343,6 +369,9 @@ class WorkoutLogger:
             notes = stats.get("notes", "")
             is_ref = stats.get("is_reference", False)
             suggestion = get_progression_suggestion(target, sets_reps) if not is_ref else ""
+
+            # Check if already logged today
+            done_today = ex in logged_today
 
             # Compute today's recommended weight
             if weight == "—" or weight == "BW":
@@ -366,9 +395,22 @@ class WorkoutLogger:
             if notes and not is_ref:
                 note = notes if not note else f"{note} — {notes}"
 
-            line = f"  {ex:<28} {target:<12} {use_today:<12} {sets_reps:<16} {note}"
+            if done_today:
+                status = "  ✓ "
+            elif next_up is None:
+                status = "  → "
+                next_up = ex
+            else:
+                status = "    "
+
+            line = f"{status}{ex:<28} {target:<12} {use_today:<12} {sets_reps:<16} {note}"
             print(line)
 
+        print()
+        if next_up:
+            print(f"  Next up: {next_up}")
+        else:
+            print(f"  ✓ All exercises logged for today!")
         print()
 
 
