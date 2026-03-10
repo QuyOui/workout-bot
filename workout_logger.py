@@ -63,6 +63,75 @@ EXERCISE_TARGETS = {
 }
 
 
+def get_progression_suggestion(target, last_sets_reps):
+    """Determine if the lifter should increase weight based on last performance vs target.
+
+    Returns a suggestion string: '↑ Increase', 'Repeat', or '' if no data.
+    """
+    if not target or not last_sets_reps or last_sets_reps == "—":
+        return ""
+
+    # Parse last_sets_reps into list of ints
+    reps_str = last_sets_reps.replace(" ", "")
+    # Handle compact notation like "4x8" -> [8,8,8,8] and "3x5" -> [5,5,5]
+    if "x" in reps_str and reps_str.count("x") == 1 and "," not in reps_str:
+        parts = reps_str.split("x")
+        try:
+            reps = [int(parts[1])] * int(parts[0])
+        except ValueError:
+            return ""
+    else:
+        try:
+            reps = [int(r) for r in reps_str.split(",")]
+        except ValueError:
+            return ""
+
+    # Parse target — may be compound like "2x5, 1x5+"
+    # Each segment: NxR, NxR+, or NxR-R2
+    segments = [s.strip() for s in target.split(",")]
+    required = []  # list of (min_reps, is_amrap) for each set
+    for seg in segments:
+        if "x" not in seg:
+            continue
+        num_sets_str, rep_part = seg.split("x", 1)
+        try:
+            num_sets = int(num_sets_str)
+        except ValueError:
+            continue
+        is_amrap = "+" in rep_part
+        rep_part_clean = rep_part.replace("+", "")
+        if "-" in rep_part_clean:
+            # Range target like 8-12 — need to hit upper end to move up
+            low, high = rep_part_clean.split("-", 1)
+            try:
+                min_reps = int(high)
+            except ValueError:
+                continue
+        else:
+            try:
+                min_reps = int(rep_part_clean)
+            except ValueError:
+                continue
+        for _ in range(num_sets):
+            required.append((min_reps, is_amrap))
+
+    if not required or not reps:
+        return ""
+
+    # Check if they did enough sets
+    if len(reps) < len(required):
+        return "Repeat"
+
+    # Check each set meets the target
+    for i, (min_r, _) in enumerate(required):
+        if i >= len(reps):
+            return "Repeat"
+        if reps[i] < min_r:
+            return "Repeat"
+
+    return "↑ Increase"
+
+
 class WorkoutLogger:
     def __init__(self):
         self.log_file = Path("workouts.json")
@@ -222,8 +291,8 @@ class WorkoutLogger:
 
         exercises = WORKOUT_EXERCISES[day]
         targets = EXERCISE_TARGETS.get(day, {})
-        print(f"  {'Exercise':<28} {'Target':<12} {'Weight':<10} {'Last Sets/Reps'}")
-        print(f"  {'-'*70}")
+        print(f"  {'Exercise':<28} {'Target':<12} {'Weight':<10} {'Last Sets/Reps':<16} {'Suggestion'}")
+        print(f"  {'-'*80}")
         for ex in exercises:
             stats = last_stats.get(ex, {})
             target = targets.get(ex, "—")
@@ -231,9 +300,10 @@ class WorkoutLogger:
             sets_reps = stats.get("sets_reps", "—")
             notes = stats.get("notes", "")
             is_ref = stats.get("is_reference", False)
+            suggestion = get_progression_suggestion(target, sets_reps) if not is_ref else ""
             if is_ref:
                 weight = f"~{weight}"
-            line = f"  {ex:<28} {target:<12} {weight:<10} {sets_reps}"
+            line = f"  {ex:<28} {target:<12} {weight:<10} {sets_reps:<16} {suggestion}"
             if is_ref:
                 line += "  (ref from old program)"
             elif notes:
