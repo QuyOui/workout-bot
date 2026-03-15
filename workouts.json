@@ -903,6 +903,22 @@
       "weight": "15",
       "sets_reps": "20,20,17,20,20",
       "notes": "4/5 sets at 20 — move to 17.5 next time"
+    },
+    {
+      "date": "3/14/26",
+      "day": "Pull A",
+      "exercise": "Cable Hammer Curls",
+      "weight": "37.5",
+      "sets_reps": "4x12",
+      "notes": "Maxed range — increase to 40 next time"
+    },
+    {
+      "date": "3/14/26",
+      "day": "Pull A",
+      "exercise": "Cable Curls",
+      "weight": "20",
+      "sets_reps": "12,8,6,8",
+      "notes": "First set hit target — stay at 20"
     }
   ]
 }
