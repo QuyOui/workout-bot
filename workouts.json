@@ -991,6 +991,14 @@
       "weight": "80",
       "sets_reps": "3x12",
       "notes": "Increased from 75 — maxed range, move to 85 next time"
+    },
+    {
+      "date": "3/17/26",
+      "day": "Legs",
+      "exercise": "Leg Curls",
+      "weight": "70",
+      "sets_reps": "12,8,7",
+      "notes": "Dropped from 12,12,8 — stay at 70"
     }
   ]
 }
