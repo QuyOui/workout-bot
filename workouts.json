@@ -1047,6 +1047,30 @@
       "weight": "37.5",
       "sets_reps": "4x12",
       "notes": "Maxed range again — move to 42.5 next time"
+    },
+    {
+      "date": "3/18/26",
+      "day": "Pull B",
+      "exercise": "Cable Curls",
+      "weight": "20",
+      "sets_reps": "8,8,7,7",
+      "notes": "More consistent than 12,8,6,8 — stay at 20"
+    },
+    {
+      "date": "3/19/26",
+      "day": "Push B",
+      "exercise": "Overhead Press",
+      "weight": "75",
+      "sets_reps": "5x5",
+      "notes": "Increased from 70 — hit 5x5 clean, move to 80 next time"
+    },
+    {
+      "date": "3/19/26",
+      "day": "Push B",
+      "exercise": "Bench Press",
+      "weight": "135",
+      "sets_reps": "9,8,8",
+      "notes": "Improved from 9,8,5 — stay at 135"
     }
   ]
 }
