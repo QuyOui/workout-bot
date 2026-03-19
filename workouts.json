@@ -1077,8 +1077,16 @@
       "day": "Push B",
       "exercise": "Cable Flyes",
       "weight": "10",
-      "sets_reps": "12, 12, 8",
+      "sets_reps": "3x12",
       "notes": "Dropped from 25 — shoulders feel better at 10, stay light"
+    },
+    {
+      "date": "3/19/26",
+      "day": "Push B",
+      "exercise": "Tricep Pushdowns",
+      "weight": "35",
+      "sets_reps": "12, 12, 8",
+      "notes": ""
     }
   ]
 }
