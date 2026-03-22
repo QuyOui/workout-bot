@@ -1103,6 +1103,46 @@
       "weight": "10",
       "sets_reps": "6x8",
       "notes": "Dropped from 20 to 10"
+    },
+    {
+      "date": "3/22/26",
+      "day": "Legs",
+      "exercise": "Back Squats",
+      "weight": "145",
+      "sets_reps": "5,5,7",
+      "notes": "Increased from 140 — hit 5+ clean, move to 150 next time"
+    },
+    {
+      "date": "3/22/26",
+      "day": "Legs",
+      "exercise": "Romanian Deadlifts",
+      "weight": "120",
+      "sets_reps": "3x12",
+      "notes": "Improved from 12,8,8 — maxed range, move to 125 next time"
+    },
+    {
+      "date": "3/22/26",
+      "day": "Legs",
+      "exercise": "Leg Extensions",
+      "weight": "85",
+      "sets_reps": "15,10,12",
+      "notes": "Increased from 80 — inconsistent, stay at 85"
+    },
+    {
+      "date": "3/22/26",
+      "day": "Legs",
+      "exercise": "Leg Curls",
+      "weight": "70",
+      "sets_reps": "12,8,4",
+      "notes": "Dropped from 12,8,7 — stay at 70"
+    },
+    {
+      "date": "3/22/26",
+      "day": "Legs",
+      "exercise": "Calf Raises",
+      "weight": "170",
+      "sets_reps": "5x12",
+      "notes": "Can't do 175 — hit 5x12 clean at 170, move to 185 next time"
     }
   ]
 }
