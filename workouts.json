@@ -247,6 +247,902 @@
       "weight": "25",
       "sets_reps": "12,10,8",
       "notes": ""
+    },
+    {
+      "date": "2/5/26",
+      "day": "Lower B",
+      "exercise": "Romanian Deadlifts",
+      "weight": "90",
+      "sets_reps": "4x12",
+      "notes": "Increased from 85"
+    },
+    {
+      "date": "2/5/26",
+      "day": "Lower B",
+      "exercise": "Goblet Squats",
+      "weight": "35",
+      "sets_reps": "3x12",
+      "notes": ""
+    },
+    {
+      "date": "2/5/26",
+      "day": "Lower B",
+      "exercise": "Leg Curls",
+      "weight": "60",
+      "sets_reps": "15,12,9",
+      "notes": "Increased from 55"
+    },
+    {
+      "date": "2/5/26",
+      "day": "Lower B",
+      "exercise": "Leg Extensions",
+      "weight": "65",
+      "sets_reps": "3x15",
+      "notes": "Increased from 60"
+    },
+    {
+      "date": "2/5/26",
+      "day": "Lower B",
+      "exercise": "Standing Calf Raises",
+      "weight": "125",
+      "sets_reps": "20,20,18",
+      "notes": ""
+    },
+    {
+      "date": "2/7/26",
+      "day": "Upper A",
+      "exercise": "Bench Press",
+      "weight": "135",
+      "sets_reps": "8,8,6,5",
+      "notes": ""
+    },
+    {
+      "date": "2/7/26",
+      "day": "Upper A",
+      "exercise": "Barbell Rows",
+      "weight": "70",
+      "sets_reps": "12,12,12,9",
+      "notes": ""
+    },
+    {
+      "date": "2/7/26",
+      "day": "Upper A",
+      "exercise": "Overhead Press",
+      "weight": "65",
+      "sets_reps": "10,10,6",
+      "notes": ""
+    },
+    {
+      "date": "2/7/26",
+      "day": "Upper A",
+      "exercise": "Tricep Extension",
+      "weight": "35",
+      "sets_reps": "3x8",
+      "notes": ""
+    },
+    {
+      "date": "2/7/26",
+      "day": "Upper A",
+      "exercise": "Dumbbell Curls",
+      "weight": "25",
+      "sets_reps": "3x8",
+      "notes": ""
+    },
+    {
+      "date": "2/8/26",
+      "day": "Lower A",
+      "exercise": "Back Squats",
+      "weight": "125",
+      "sets_reps": "4x8",
+      "notes": ""
+    },
+    {
+      "date": "2/8/26",
+      "day": "Lower A",
+      "exercise": "Conventional Deadlifts",
+      "weight": "155",
+      "sets_reps": "3x8",
+      "notes": ""
+    },
+    {
+      "date": "2/8/26",
+      "day": "Lower A",
+      "exercise": "Leg Extensions",
+      "weight": "65",
+      "sets_reps": "3x15",
+      "notes": ""
+    },
+    {
+      "date": "2/8/26",
+      "day": "Lower A",
+      "exercise": "Leg Curls",
+      "weight": "60",
+      "sets_reps": "15,12,10",
+      "notes": ""
+    },
+    {
+      "date": "2/8/26",
+      "day": "Lower A",
+      "exercise": "Calf Raises",
+      "weight": "125",
+      "sets_reps": "20,20,20,17",
+      "notes": ""
+    },
+    {
+      "date": "2/11/26",
+      "day": "Upper B",
+      "exercise": "Bench Press",
+      "weight": "135",
+      "sets_reps": "8,8,8,6",
+      "notes": ""
+    },
+    {
+      "date": "2/11/26",
+      "day": "Upper B",
+      "exercise": "Overhead Press",
+      "weight": "70",
+      "sets_reps": "10,6,6",
+      "notes": "Increased from 65"
+    },
+    {
+      "date": "2/11/26",
+      "day": "Upper B",
+      "exercise": "Chin-ups",
+      "weight": "BW",
+      "sets_reps": "4,4,3,2",
+      "notes": ""
+    },
+    {
+      "date": "2/11/26",
+      "day": "Upper B",
+      "exercise": "Overhead Tricep Ext",
+      "weight": "35",
+      "sets_reps": "15,15,12",
+      "notes": ""
+    },
+    {
+      "date": "2/21/26",
+      "day": "Lower B",
+      "exercise": "Romanian Deadlifts",
+      "weight": "95",
+      "sets_reps": "4x10",
+      "notes": ""
+    },
+    {
+      "date": "2/21/26",
+      "day": "Lower B",
+      "exercise": "Leg Extensions",
+      "weight": "70",
+      "sets_reps": "3x15",
+      "notes": "Increased from 65"
+    },
+    {
+      "date": "2/21/26",
+      "day": "Lower B",
+      "exercise": "Leg Curls",
+      "weight": "60",
+      "sets_reps": "14,15,14",
+      "notes": ""
+    },
+    {
+      "date": "2/21/26",
+      "day": "Lower B",
+      "exercise": "Standing Calf Raises",
+      "weight": "125",
+      "sets_reps": "3x20",
+      "notes": ""
+    },
+    {
+      "date": "2/22/26",
+      "day": "Upper A",
+      "exercise": "Bench Press",
+      "weight": "135",
+      "sets_reps": "8,8,8,7",
+      "notes": ""
+    },
+    {
+      "date": "2/22/26",
+      "day": "Upper A",
+      "exercise": "Standing Cable Rows",
+      "weight": "20",
+      "sets_reps": "4x12",
+      "notes": ""
+    },
+    {
+      "date": "2/22/26",
+      "day": "Upper A",
+      "exercise": "Cable Presses",
+      "weight": "20",
+      "sets_reps": "3x10",
+      "notes": ""
+    },
+    {
+      "date": "2/22/26",
+      "day": "Upper A",
+      "exercise": "Tricep Pushdowns",
+      "weight": "30",
+      "sets_reps": "12,12,10",
+      "notes": ""
+    },
+    {
+      "date": "2/22/26",
+      "day": "Upper A",
+      "exercise": "Dumbbell Curls",
+      "weight": "20",
+      "sets_reps": "12,8,8",
+      "notes": ""
+    },
+    {
+      "date": "2/22/26",
+      "day": "Upper A",
+      "exercise": "Face Pulls",
+      "weight": "20",
+      "sets_reps": "15,10,10",
+      "notes": ""
+    },
+    {
+      "date": "2/28/26",
+      "day": "Lower A",
+      "exercise": "Back Squats",
+      "weight": "130",
+      "sets_reps": "4x8",
+      "notes": "Increased from 125"
+    },
+    {
+      "date": "2/28/26",
+      "day": "Lower A",
+      "exercise": "Conventional Deadlifts",
+      "weight": "160",
+      "sets_reps": "3x8",
+      "notes": "Increased from 155"
+    },
+    {
+      "date": "2/28/26",
+      "day": "Lower A",
+      "exercise": "Leg Extensions",
+      "weight": "75",
+      "sets_reps": "3x15",
+      "notes": "Increased from 70"
+    },
+    {
+      "date": "2/28/26",
+      "day": "Lower A",
+      "exercise": "Leg Curls",
+      "weight": "60",
+      "sets_reps": "3x15",
+      "notes": ""
+    },
+    {
+      "date": "2/28/26",
+      "day": "Lower A",
+      "exercise": "Calf Raises",
+      "weight": "125",
+      "sets_reps": "4x20",
+      "notes": ""
+    },
+    {
+      "date": "3/1/26",
+      "day": "Pull A",
+      "exercise": "Lat Pulldowns",
+      "weight": "35",
+      "sets_reps": "3x12",
+      "notes": ""
+    },
+    {
+      "date": "3/1/26",
+      "day": "Pull A",
+      "exercise": "Cable Rows",
+      "weight": "25",
+      "sets_reps": "4x12",
+      "notes": "Increased from 20"
+    },
+    {
+      "date": "3/1/26",
+      "day": "Pull A",
+      "exercise": "Face Pulls",
+      "weight": "15",
+      "sets_reps": "3x15",
+      "notes": ""
+    },
+    {
+      "date": "3/1/26",
+      "day": "Pull A",
+      "exercise": "Cable Curls",
+      "weight": "25",
+      "sets_reps": "3x8",
+      "notes": ""
+    },
+    {
+      "date": "3/1/26",
+      "day": "Pull A",
+      "exercise": "Cable Hammer Curls",
+      "weight": "30",
+      "sets_reps": "3x8",
+      "notes": ""
+    },
+    {
+      "date": "3/2/26",
+      "day": "Push A",
+      "exercise": "Bench Press",
+      "weight": "135",
+      "sets_reps": "4x8",
+      "notes": "All sets clean \u2014 increase to 140 next time"
+    },
+    {
+      "date": "3/2/26",
+      "day": "Push A",
+      "exercise": "Overhead Press",
+      "weight": "70",
+      "sets_reps": "10,7,6",
+      "notes": ""
+    },
+    {
+      "date": "3/2/26",
+      "day": "Push A",
+      "exercise": "Cable Flyes",
+      "weight": "15",
+      "sets_reps": "3x12",
+      "notes": "First time \u2014 baseline weight"
+    },
+    {
+      "date": "3/2/26",
+      "day": "Push A",
+      "exercise": "Tricep Pushdowns",
+      "weight": "30",
+      "sets_reps": "12,10,8",
+      "notes": ""
+    },
+    {
+      "date": "3/2/26",
+      "day": "Push A",
+      "exercise": "Cable Overhead Tricep Ext",
+      "weight": "15",
+      "sets_reps": "3x12",
+      "notes": "First time \u2014 baseline weight"
+    },
+    {
+      "date": "3/2/26",
+      "day": "Push A",
+      "exercise": "Cable Lateral Raises",
+      "weight": "15",
+      "sets_reps": "3x12",
+      "notes": "First time \u2014 baseline weight. Target is 3x15"
+    },
+    {
+      "date": "3/3/26",
+      "day": "Legs",
+      "exercise": "Back Squats",
+      "weight": "130",
+      "sets_reps": "3x5",
+      "notes": ""
+    },
+    {
+      "date": "3/5/26",
+      "day": "Pull B",
+      "exercise": "Barbell Rows",
+      "weight": "75",
+      "sets_reps": "5x5",
+      "notes": ""
+    },
+    {
+      "date": "3/5/26",
+      "day": "Pull B",
+      "exercise": "Lat Pulldowns",
+      "weight": "35",
+      "sets_reps": "3x12",
+      "notes": ""
+    },
+    {
+      "date": "3/5/26",
+      "day": "Pull B",
+      "exercise": "Cable Rows",
+      "weight": "30",
+      "sets_reps": "3x12",
+      "notes": "Increased from 25"
+    },
+    {
+      "date": "3/5/26",
+      "day": "Pull B",
+      "exercise": "Face Pulls",
+      "weight": "15",
+      "sets_reps": "20,20,15,15,15",
+      "notes": ""
+    },
+    {
+      "date": "3/5/26",
+      "day": "Pull B",
+      "exercise": "Cable Hammer Curls",
+      "weight": "30",
+      "sets_reps": "4x12",
+      "notes": "Hit top of range \u2014 increase to 35 next time"
+    },
+    {
+      "date": "3/5/26",
+      "day": "Pull B",
+      "exercise": "Cable Curls",
+      "weight": "20",
+      "sets_reps": "8,7,5,5",
+      "notes": "Reps dropped \u2014 stay at 20 next time"
+    },
+    {
+      "date": "3/6/26",
+      "day": "Push B",
+      "exercise": "Overhead Press",
+      "weight": "70",
+      "sets_reps": "5x5",
+      "notes": "Clean \u2014 increase to 75 next time"
+    },
+    {
+      "date": "3/6/26",
+      "day": "Push B",
+      "exercise": "Bench Press",
+      "weight": "135",
+      "sets_reps": "9,8,5",
+      "notes": "Reps dropped \u2014 try 130 next time for 3x8-12"
+    },
+    {
+      "date": "3/6/26",
+      "day": "Push B",
+      "exercise": "Cable Flyes",
+      "weight": "20",
+      "sets_reps": "6,8,8",
+      "notes": "Increased from 15 \u2014 stay at 20"
+    },
+    {
+      "date": "3/6/26",
+      "day": "Push B",
+      "exercise": "Tricep Pushdowns",
+      "weight": "30",
+      "sets_reps": "12,12,9",
+      "notes": "Close to maxing \u2014 try 35 next time"
+    },
+    {
+      "date": "3/6/26",
+      "day": "Push B",
+      "exercise": "Cable Overhead Tricep Ext",
+      "weight": "20",
+      "sets_reps": "3x12",
+      "notes": "Maxed range \u2014 increase to 25 next time"
+    },
+    {
+      "date": "3/6/26",
+      "day": "Push B",
+      "exercise": "Cable Lateral Raises",
+      "weight": "20",
+      "sets_reps": "8,5,5",
+      "notes": "Too heavy for 15-20 target \u2014 drop to 15 next time"
+    },
+    {
+      "date": "3/7/26",
+      "day": "Legs",
+      "exercise": "Leg Curls",
+      "weight": "70",
+      "sets_reps": "12,8,5",
+      "notes": "Stay at 70 next session"
+    },
+    {
+      "date": "3/7/26",
+      "day": "Legs",
+      "exercise": "Calf Raises",
+      "weight": "150",
+      "sets_reps": "12,12,12,12,12",
+      "notes": "Move up to 170 next session"
+    },
+    {
+      "date": "3/7/26",
+      "day": "Legs",
+      "exercise": "Leg Extensions",
+      "weight": "75",
+      "sets_reps": "3x15",
+      "notes": ""
+    },
+    {
+      "date": "3/8/26",
+      "day": "Pull A",
+      "exercise": "Deadlifts",
+      "weight": "135",
+      "sets_reps": "1x5",
+      "notes": "Move up to 145 next time"
+    },
+    {
+      "date": "3/8/26",
+      "day": "Pull A",
+      "exercise": "Lat Pulldowns",
+      "weight": "42.5",
+      "sets_reps": "12,10,8",
+      "notes": "Stay at 42.5 next session"
+    },
+    {
+      "date": "3/8/26",
+      "day": "Pull A",
+      "exercise": "Cable Rows",
+      "weight": "30",
+      "sets_reps": "12,10,7",
+      "notes": "Stay at 30 next session"
+    },
+    {
+      "date": "3/8/26",
+      "day": "Pull A",
+      "exercise": "Face Pulls",
+      "weight": "15",
+      "sets_reps": "5x15",
+      "notes": "Move up to 17.5 next time"
+    },
+    {
+      "date": "3/8/26",
+      "day": "Pull A",
+      "exercise": "Cable Hammer Curls",
+      "weight": "37.5",
+      "sets_reps": "15,12,10,8",
+      "notes": "Big jump from 30 \u2014 stay at 37.5 next session"
+    },
+    {
+      "date": "3/8/26",
+      "day": "Pull A",
+      "exercise": "Cable Curls",
+      "weight": "20",
+      "sets_reps": "9,6,4,7",
+      "notes": "Improving from 8,7,5,5 \u2014 stay at 20"
+    },
+    {
+      "date": "3/9/26",
+      "day": "Push A",
+      "exercise": "Overhead Press",
+      "weight": "70",
+      "sets_reps": "10,8,8",
+      "notes": "Improved from 10,7,6 \u2014 hitting target range"
+    },
+    {
+      "date": "3/9/26",
+      "day": "Push A",
+      "exercise": "Cable Flyes",
+      "weight": "20",
+      "sets_reps": "3x12",
+      "notes": "Form needs work \u2014 stay at 20"
+    },
+    {
+      "date": "3/9/26",
+      "day": "Push A",
+      "exercise": "Tricep Pushdowns",
+      "weight": "35",
+      "sets_reps": "12,12,6",
+      "notes": "Increased from 30 \u2014 stay at 35"
+    },
+    {
+      "date": "3/9/26",
+      "day": "Push A",
+      "exercise": "Bench Press",
+      "weight": "140",
+      "sets_reps": "5,5,5,5,7",
+      "notes": "Increased from 135 \u2014 hit 5x5+ clean, increase to 145 next time"
+    },
+    {
+      "date": "3/9/26",
+      "day": "Push A",
+      "exercise": "Cable Overhead Tricep Ext",
+      "weight": "25",
+      "sets_reps": "12,8,12",
+      "notes": "Hit target on sets 1 & 3, stay at 25"
+    },
+    {
+      "date": "3/9/26",
+      "day": "Push A",
+      "exercise": "Cable Lateral Raises",
+      "weight": "10",
+      "sets_reps": "15,10,8",
+      "notes": "Dropped off after set 1 \u2014 stay at 10 until hitting 3x15"
+    },
+    {
+      "date": "3/10/26",
+      "day": "Legs",
+      "exercise": "Back Squats",
+      "weight": "135",
+      "sets_reps": "5,5,8",
+      "notes": ""
+    },
+    {
+      "date": "3/10/26",
+      "day": "Legs",
+      "exercise": "Romanian Deadlifts",
+      "weight": "115",
+      "sets_reps": "12,12,12",
+      "notes": ""
+    },
+    {
+      "date": "3/10/26",
+      "day": "Legs",
+      "exercise": "Leg Extensions",
+      "weight": "75",
+      "sets_reps": "3x15",
+      "notes": ""
+    },
+    {
+      "date": "3/10/26",
+      "day": "Legs",
+      "exercise": "Leg Curls",
+      "weight": "70",
+      "sets_reps": "12,12,8",
+      "notes": "Improved from 12,8,5 — stay at 70"
+    },
+    {
+      "date": "3/10/26",
+      "day": "Legs",
+      "exercise": "Calf Raises",
+      "weight": "170",
+      "sets_reps": "5x12",
+      "notes": "Increased from 150 — hit all sets clean"
+    },
+    {
+      "date": "3/14/26",
+      "day": "Pull A",
+      "exercise": "Deadlifts",
+      "weight": "145",
+      "sets_reps": "1x8",
+      "notes": "Increased from 135 — hit 8 reps, move up to 150 next time"
+    },
+    {
+      "date": "3/14/26",
+      "day": "Pull A",
+      "exercise": "Lat Pulldowns",
+      "weight": "42.5",
+      "sets_reps": "3x10",
+      "notes": "Improved from 12,10,8 — more consistent, stay at 42.5"
+    },
+    {
+      "date": "3/14/26",
+      "day": "Pull A",
+      "exercise": "Cable Rows",
+      "weight": "30",
+      "sets_reps": "3x12",
+      "notes": "Maxed range — increase to 35 next time"
+    },
+    {
+      "date": "3/14/26",
+      "day": "Pull A",
+      "exercise": "Face Pulls",
+      "weight": "15",
+      "sets_reps": "20,20,17,20,20",
+      "notes": "4/5 sets at 20 — move to 17.5 next time"
+    },
+    {
+      "date": "3/14/26",
+      "day": "Pull A",
+      "exercise": "Cable Hammer Curls",
+      "weight": "37.5",
+      "sets_reps": "4x12",
+      "notes": "Maxed range — increase to 40 next time"
+    },
+    {
+      "date": "3/14/26",
+      "day": "Pull A",
+      "exercise": "Cable Curls",
+      "weight": "20",
+      "sets_reps": "12,8,6,8",
+      "notes": "First set hit target — stay at 20"
+    },
+    {
+      "date": "3/15/26",
+      "day": "Push A",
+      "exercise": "Bench Press",
+      "weight": "145",
+      "sets_reps": "5,5,5,5,7",
+      "notes": "Increased from 140 — hit 5x5+ clean, move to 150 next time"
+    },
+    {
+      "date": "3/15/26",
+      "day": "Push A",
+      "exercise": "Overhead Press",
+      "weight": "70",
+      "sets_reps": "10,10,7",
+      "notes": "Improved from 10,8,8 — stay at 70"
+    },
+    {
+      "date": "3/15/26",
+      "day": "Push A",
+      "exercise": "Cable Flyes",
+      "weight": "20",
+      "sets_reps": "3x12",
+      "notes": "Dropped from 25 for better form — maxed range, move to 25 next time"
+    },
+    {
+      "date": "3/15/26",
+      "day": "Push A",
+      "exercise": "Tricep Pushdowns",
+      "weight": "35",
+      "sets_reps": "12,12,8",
+      "notes": "Same as last time — stay at 35"
+    },
+    {
+      "date": "3/15/26",
+      "day": "Push A",
+      "exercise": "Cable Overhead Tricep Ext",
+      "weight": "25",
+      "sets_reps": "12,10,8",
+      "notes": "More consistent than 12,8,12 — stay at 25"
+    },
+    {
+      "date": "3/15/26",
+      "day": "Push A",
+      "exercise": "Cable Lateral Raises",
+      "weight": "10",
+      "sets_reps": "6x8",
+      "notes": "Extra sets but below 15-20 target — stay at 10"
+    },
+    {
+      "date": "3/17/26",
+      "day": "Legs",
+      "exercise": "Back Squats",
+      "weight": "140",
+      "sets_reps": "5,5,6",
+      "notes": "Increased from 135 — hit 5+ clean, move to 145 next time"
+    },
+    {
+      "date": "3/17/26",
+      "day": "Legs",
+      "exercise": "Romanian Deadlifts",
+      "weight": "120",
+      "sets_reps": "12,8,8",
+      "notes": "Increased from 115 — stay at 120"
+    },
+    {
+      "date": "3/17/26",
+      "day": "Legs",
+      "exercise": "Leg Extensions",
+      "weight": "80",
+      "sets_reps": "3x12",
+      "notes": "Increased from 75 — maxed range, move to 85 next time"
+    },
+    {
+      "date": "3/17/26",
+      "day": "Legs",
+      "exercise": "Leg Curls",
+      "weight": "70",
+      "sets_reps": "12,8,7",
+      "notes": "Dropped from 12,12,8 — stay at 70"
+    },
+    {
+      "date": "3/17/26",
+      "day": "Legs",
+      "exercise": "Calf Raises",
+      "weight": "170",
+      "sets_reps": "5x12",
+      "notes": "Stayed at 170 instead of 175 — hit 5x12 clean, move to 175 next time"
+    },
+    {
+      "date": "3/18/26",
+      "day": "Pull B",
+      "exercise": "Barbell Rows",
+      "weight": "80",
+      "sets_reps": "5x5",
+      "notes": "Increased from 75 — hit 5x5 clean, move to 85 next time"
+    },
+    {
+      "date": "3/18/26",
+      "day": "Pull B",
+      "exercise": "Lat Pulldowns",
+      "weight": "42.5",
+      "sets_reps": "3x12",
+      "notes": "Improved from 3x10 — maxed range, move to 47.5 next time"
+    },
+    {
+      "date": "3/18/26",
+      "day": "Pull B",
+      "exercise": "Cable Rows",
+      "weight": "35",
+      "sets_reps": "3x12",
+      "notes": "Increased from 30 — maxed range, move to 40 next time"
+    },
+    {
+      "date": "3/18/26",
+      "day": "Pull B",
+      "exercise": "Face Pulls",
+      "weight": "15",
+      "sets_reps": "5x20",
+      "notes": "Maxed range — move to 17.5 next time"
+    },
+    {
+      "date": "3/18/26",
+      "day": "Pull B",
+      "exercise": "Cable Hammer Curls",
+      "weight": "37.5",
+      "sets_reps": "4x12",
+      "notes": "Maxed range again — move to 42.5 next time"
+    },
+    {
+      "date": "3/18/26",
+      "day": "Pull B",
+      "exercise": "Cable Curls",
+      "weight": "20",
+      "sets_reps": "8,8,7,7",
+      "notes": "More consistent than 12,8,6,8 — stay at 20"
+    },
+    {
+      "date": "3/19/26",
+      "day": "Push B",
+      "exercise": "Overhead Press",
+      "weight": "75",
+      "sets_reps": "5x5",
+      "notes": "Increased from 70 — hit 5x5 clean, move to 80 next time"
+    },
+    {
+      "date": "3/19/26",
+      "day": "Push B",
+      "exercise": "Bench Press",
+      "weight": "135",
+      "sets_reps": "9,8,8",
+      "notes": "Improved from 9,8,5 — stay at 135"
+    },
+    {
+      "date": "3/19/26",
+      "day": "Push B",
+      "exercise": "Cable Flyes",
+      "weight": "10",
+      "sets_reps": "3x12",
+      "notes": "Dropped from 25 — shoulders feel better at 10, stay light"
+    },
+    {
+      "date": "3/19/26",
+      "day": "Push B",
+      "exercise": "Tricep Pushdowns",
+      "weight": "35",
+      "sets_reps": "12, 12, 8",
+      "notes": ""
+    },
+    {
+      "date": "3/19/26",
+      "day": "Push B",
+      "exercise": "Cable Overhead Tricep Ext",
+      "weight": "25",
+      "sets_reps": "3x12",
+      "notes": ""
+    },
+    {
+      "date": "3/19/26",
+      "day": "Push B",
+      "exercise": "Cable Lateral Raises",
+      "weight": "10",
+      "sets_reps": "6x8",
+      "notes": "Dropped from 20 to 10"
+    },
+    {
+      "date": "3/21/26",
+      "day": "Legs",
+      "exercise": "Back Squats",
+      "weight": "145",
+      "sets_reps": "5,5,7",
+      "notes": "Increased from 140 — hit 5+ clean, move to 150 next time"
+    },
+    {
+      "date": "3/21/26",
+      "day": "Legs",
+      "exercise": "Romanian Deadlifts",
+      "weight": "120",
+      "sets_reps": "3x12",
+      "notes": "Improved from 12,8,8 — maxed range, move to 125 next time"
+    },
+    {
+      "date": "3/21/26",
+      "day": "Legs",
+      "exercise": "Leg Extensions",
+      "weight": "85",
+      "sets_reps": "15,10,12",
+      "notes": "Increased from 80 — inconsistent, stay at 85"
+    },
+    {
+      "date": "3/21/26",
+      "day": "Legs",
+      "exercise": "Leg Curls",
+      "weight": "70",
+      "sets_reps": "12,8,4",
+      "notes": "Dropped from 12,8,7 — stay at 70"
+    },
+    {
+      "date": "3/21/26",
+      "day": "Legs",
+      "exercise": "Calf Raises",
+      "weight": "170",
+      "sets_reps": "5x12",
+      "notes": "Can't do 175 — hit 5x12 clean at 170, move to 185 next time"
     }
   ]
 }
